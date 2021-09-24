@@ -1,0 +1,14 @@
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\bin\Debug\Proj.Business.dll
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\bin\Debug\Proj.Business.pdb
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\bin\Debug\Proj.DataAccess.dll
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\bin\Debug\Proj.Entity.dll
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\bin\Debug\Proj.DataAccess.pdb
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\bin\Debug\Proj.DataAccess.dll.config
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\bin\Debug\Proj.Entity.pdb
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\obj\Debug\Proj.Business.csproj.AssemblyReference.cache
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\obj\Debug\Proj.Business.csproj.CoreCompileInputs.cache
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\obj\Debug\Proj.Business.csproj.CopyComplete
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\obj\Debug\Proj.Business.dll
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\obj\Debug\Proj.Business.pdb
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\bin\Debug\EntityFramework.dll
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Business\bin\Debug\EntityFramework.xml

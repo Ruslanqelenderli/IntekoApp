@@ -1,0 +1,6 @@
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Entity\bin\Debug\Proj.Entity.dll
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Entity\bin\Debug\Proj.Entity.pdb
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Entity\obj\Debug\Proj.Entity.csproj.AssemblyReference.cache
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Entity\obj\Debug\Proj.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Entity\obj\Debug\Proj.Entity.dll
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Entity\obj\Debug\Proj.Entity.pdb
