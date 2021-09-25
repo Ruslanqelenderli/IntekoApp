@@ -39,6 +39,16 @@ namespace Proj.DataAccess.Concrete.EF
             throw new NotImplementedException();
         }
 
+        public List<Phone> GetProductId(Guid id)
+        {
+            using (var db = new IntekoDbContext())
+            {
+                var phoneNumbers=db.Phone.Where(x => x.ProductId == id).ToList();
+                
+                return phoneNumbers;
+            }
+        }
+
         public bool Remove(Phone model)
         {
             throw new NotImplementedException();

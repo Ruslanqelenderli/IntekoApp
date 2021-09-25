@@ -46,3 +46,5 @@ C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\bin\Debug\System.Numer
 C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\obj\Debug\Proj.Inteko.MyForms.ProductForms.AddPhoneNumberForm.resources
 C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\obj\Debug\Proj.Inteko.MyForms.BridgeForms.EmployeeBridgeForm.resources
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\obj\Debug\Proj.Inteko.MyForms.ProductForms.ControlForm.resources
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\obj\Debug\Proj.Inteko.MyForms.ProductForms.PhoneNumberForm.resources

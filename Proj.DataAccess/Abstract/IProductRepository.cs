@@ -9,5 +9,9 @@ namespace Proj.DataAccess.Abstract
 {
     public interface IProductRepository:IGenericRepository<Product,Guid>
     {
+        void CheckStatus();
+        void CheckPaid();
+        bool SentMethod(Guid id);
+        bool PaidMethod(Guid id);
     }
 }

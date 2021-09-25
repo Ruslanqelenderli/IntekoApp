@@ -9,5 +9,6 @@ namespace Proj.DataAccess.Abstract
 {
     public interface IPhoneRepository:IGenericRepository<Phone,Guid>
     {
+        List<Phone> GetProductId(Guid id);
     }
 }

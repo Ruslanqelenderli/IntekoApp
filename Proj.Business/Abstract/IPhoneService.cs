@@ -12,5 +12,6 @@ namespace Proj.Business.Abstract
     {
         List<Phone> GetAll();
         Phone GetByID(Guid id);
+        List<Phone> GetProductId(Guid id);
     }
 }

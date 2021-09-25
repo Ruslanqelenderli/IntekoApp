@@ -12,5 +12,9 @@ namespace Proj.Business.Abstract
     {
         List<Product> GetAll();
         Product GetByID(Guid id);
+        void CheckStatus();
+        void CheckPaid();
+        bool SentMethod(Guid id);
+        bool PaidMethod(Guid id);
     }
 }

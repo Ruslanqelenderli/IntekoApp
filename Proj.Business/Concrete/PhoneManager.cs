@@ -50,6 +50,11 @@ namespace Proj.Business.Concrete
             throw new NotImplementedException();
         }
 
+        public List<Phone> GetProductId(Guid id)
+        {
+            return phoneRepository.GetProductId(id);
+        }
+
         public bool Remove(PhoneModel model)
         {
             throw new NotImplementedException();

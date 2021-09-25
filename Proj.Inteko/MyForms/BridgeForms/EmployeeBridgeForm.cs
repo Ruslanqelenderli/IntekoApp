@@ -33,5 +33,11 @@ namespace Proj.Inteko.MyForms.BridgeForms
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ControlForm controlForm = new ControlForm();
+            controlForm.ShowDialog();
+        }
     }
 }

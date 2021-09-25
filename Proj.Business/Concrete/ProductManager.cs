@@ -22,7 +22,20 @@ namespace Proj.Business.Concrete
         {
             this.productRepository = productRepository;
         }
+
+
+
+
         #endregion
+        public void CheckPaid()
+        {
+            productRepository.CheckPaid();
+        }
+
+        public void CheckStatus()
+        {
+            productRepository.CheckStatus();
+        }
         public bool Create(ProductModel model)
         {
             if (model != null)
@@ -66,12 +79,22 @@ namespace Proj.Business.Concrete
 
         public Product GetByID(Guid id)
         {
-            throw new NotImplementedException();
+            return productRepository.GetByID(id);
+        }
+
+        public bool PaidMethod(Guid id)
+        {
+            return productRepository.PaidMethod(id);
         }
 
         public bool Remove(ProductModel model)
         {
             throw new NotImplementedException();
+        }
+
+        public bool SentMethod(Guid id)
+        {
+            return productRepository.SentMethod(id);
         }
 
         public bool Update(ProductModel model)
