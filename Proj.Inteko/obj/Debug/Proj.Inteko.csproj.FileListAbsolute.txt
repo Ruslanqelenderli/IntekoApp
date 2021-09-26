@@ -48,3 +48,8 @@ C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\obj\Debug\Proj.Inteko.
 C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\obj\Debug\Proj.Inteko.MyForms.BridgeForms.EmployeeBridgeForm.resources
 C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\obj\Debug\Proj.Inteko.MyForms.ProductForms.ControlForm.resources
 C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\obj\Debug\Proj.Inteko.MyForms.ProductForms.PhoneNumberForm.resources
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\bin\Debug\Microsoft.Office.Tools.Excel.v4.0.Utilities.dll
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\obj\Debug\Proj.Inteko.MyForms.BridgeForms.DirectorBridgeForm.resources
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\obj\Debug\Proj.Inteko.MyForms.ProductForms.UpdateProductForm.resources
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\obj\Debug\Proj.Inteko.MyForms.UserForms.UserInfoForm.resources
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.Inteko\obj\Debug\Proj.Inteko.MyForms.LogForms.LogForm.resources

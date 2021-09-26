@@ -11,7 +11,7 @@ namespace Proj.DataAccess.Abstract
         List<TModel> GetAll();
         bool Create(TModel model);
         bool Update(TModel model);
-        bool Remove(TModel model);
+        bool Remove(IdType id);
         TModel GetByID(IdType id);
     }
 }

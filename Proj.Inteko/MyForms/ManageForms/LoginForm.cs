@@ -1,7 +1,10 @@
 ﻿using Proj.Business.Abstract;
 using Proj.Business.Concrete;
 using Proj.Business.Enums;
+using Proj.Business.Models;
+using Proj.Business.Static;
 using Proj.DataAccess.Concrete.EF;
+using Proj.Entity.Concrete;
 using Proj.Inteko.MyForms.BridgeForms;
 using Proj.Inteko.MyForms.ManageForms;
 using System;
@@ -18,6 +21,8 @@ namespace Proj.Inteko.MyForms
 {
     public partial class LoginForm : Form
     {
+        ILogService logService = new LogManager(new LogRepository());
+        IUserService userService = new UserManager(new UserRepository());
         public LoginForm()
         {
             InitializeComponent();
@@ -33,7 +38,7 @@ namespace Proj.Inteko.MyForms
         {
             if (CheckTextBox())
             {
-                IUserService userService = new UserManager(new UserRepository());
+                
                 var users = userService.GetAll();
                 string username = txb_UserName.Text;
                 string password = txb_Password.Text;
@@ -45,11 +50,18 @@ namespace Proj.Inteko.MyForms
                         check = true;
                         if (user.Status == Status.Director.ToString())
                         {
-                            MessageBox.Show("Director");
+                            LoginLog(user);
+                            Static.User = user;
+                            DirectorBridgeForm employeeBridgeForm = new DirectorBridgeForm();
+                            this.Hide();
+                            employeeBridgeForm.ShowDialog();
                         }
                         else
                         {
+                            LoginLog(user);
+                            Static.User = user;
                             EmployeeBridgeForm employeeBridgeForm = new EmployeeBridgeForm();
+                            this.Hide();
                             employeeBridgeForm.ShowDialog();
 
                             
@@ -81,6 +93,19 @@ namespace Proj.Inteko.MyForms
                 return true;
             }
             return false;
+        }
+        private void LoginLog(User user)
+        {
+            LogModel model = new LogModel()
+            {
+                Description = user.UserName + " istifadəçisi giriş etdi.",
+                CreateDate = DateTime.Now
+            };
+            var result = logService.Create(model);
+            if (!result)
+            {
+                MessageBox.Show("Log Xətası.");
+            }
         }
     }
 }

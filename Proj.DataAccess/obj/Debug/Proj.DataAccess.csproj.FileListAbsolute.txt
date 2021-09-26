@@ -19,3 +19,4 @@ C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.Dat
 C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations.İnfo.resources
 C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations.Payment.resources
 C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations.mistake.resources
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations.Log.resources

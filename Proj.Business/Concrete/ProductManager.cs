@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Proj.Business.Concrete
 {
@@ -87,9 +88,9 @@ namespace Proj.Business.Concrete
             return productRepository.PaidMethod(id);
         }
 
-        public bool Remove(ProductModel model)
+        public bool Remove(Guid id)
         {
-            throw new NotImplementedException();
+            return productRepository.Remove(id);
         }
 
         public bool SentMethod(Guid id)
@@ -97,9 +98,45 @@ namespace Proj.Business.Concrete
             return productRepository.SentMethod(id);
         }
 
+        public bool Update(Product model)
+        {
+            return productRepository.Update(model);
+        }
+
         public bool Update(ProductModel model)
         {
-            throw new NotImplementedException();
+            if (model != null)
+            {
+                Product product = new Product()
+                {
+                    Id = Static.Static.ProductİdForUpdate,
+                    Name = model.Name,
+                    Surname = model.Surname,
+                    CompanyName = model.CompanyName,
+                    VoenPassword = model.VoenPassword,
+                    District = model.District,
+                    Address = model.Address,
+                    ApproximateLocation = model.ApproximateLocation,
+                    CashireModel = model.CashireModel,
+                    ContractNO = model.ContractNO,
+                    EmployeeWhoConnects = model.EmployeeWhoConnects,
+                    EmployeeWhoSells = model.EmployeeWhoSells,
+                    TypeOfPayment = model.TypeOfPayment,
+                    Price = model.Price,
+                    ServicePrice = model.ServicePrice,
+                    SellesPayment = model.SellesPayment,
+                    WrittenByOrxan = model.WrittenByOrxan,
+                    TaxInterest = model.TaxInterest,
+                    RegistrationDate = model.RegistrationDate,
+                    InitialPayment = model.InitialPayment,
+                    İnfo = model.İnfo,
+                    PaymentStatus = model.PaymentStatus,
+                    
+
+                };
+                return productRepository.Update(product);
+            }
+            return false;
         }
     }
 }

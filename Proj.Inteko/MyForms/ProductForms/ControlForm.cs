@@ -1,6 +1,8 @@
-﻿using Proj.Business.Abstract;
+﻿using Microsoft.Office.Interop.Excel;
+using Proj.Business.Abstract;
 using Proj.Business.Concrete;
 using Proj.Business.Enums;
+using Proj.Business.Static;
 using Proj.DataAccess.Concrete.EF;
 using System;
 using System.Collections.Generic;
@@ -27,29 +29,39 @@ namespace Proj.Inteko.MyForms.ProductForms
 
         private void ControlForm_Load(object sender, EventArgs e)
         {
-            btn_WasPaid.Visible = false;
-            btn_Contact.Visible = false;
-            btn_WasSent.Visible = false;
+            ButtonFalse();
+            btn_Update.Visible = false;
+            btn_Remove.Visible = false;
+            
         }
 
         private void btn_AllProduct_Click(object sender, EventArgs e)
         {
             GetAllProduct();
+            ButtonFalse();
+
         }
         private void btn_ItsTime_Click(object sender, EventArgs e)
         {
             productService.CheckStatus();
             GetItsTimeProduct();
+            ButtonFalse();
+
         }
 
         private void btn_Sent_Click(object sender, EventArgs e)
         {
             GetSentProduct();
+            ButtonFalse();
+
+
         }
 
         private void btn_Paid_Click(object sender, EventArgs e)
         {
             GetPaidProduct();
+            ButtonFalse();
+
         }
         #region methods
         private void GetAllProduct()
@@ -174,6 +186,8 @@ namespace Proj.Inteko.MyForms.ProductForms
             btn_Contact.Visible = true;
             btn_WasPaid.Visible = false;
             btn_WasSent.Visible = false;
+            btn_Approval.Visible = false;
+            rdb_InitialPayment.Visible = false;
 
 
             Guid id = (Guid)dgv_Control.CurrentRow.Cells[0].Value;
@@ -189,6 +203,20 @@ namespace Proj.Inteko.MyForms.ProductForms
 
             }
 
+            if (product.InitialPayment == false)
+            {
+
+                btn_Approval.Visible = true;
+                rdb_InitialPayment.Visible = true;
+            }
+
+            if (Static.User.Status == Status.Director.ToString())
+            {
+                btn_Update.Visible = true;
+                btn_Remove.Visible = true;
+            }
+
+
 
         }
 
@@ -200,10 +228,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             phoneNumberForm.ShowDialog();
         }
 
-        public static class Static
-        {
-            public static Guid  Id { get; set; }
-        }
+        
 
         private void btn_WasSent_Click(object sender, EventArgs e)
         {
@@ -240,6 +265,110 @@ namespace Proj.Inteko.MyForms.ProductForms
             {
                 MessageBox.Show("Uğursuz əməliyyat.");
             }
+        }
+
+        private void btn_Approval_Click(object sender, EventArgs e)
+        {
+            if (rdb_InitialPayment.Checked == true)
+            {
+                Guid id = (Guid)dgv_Control.CurrentRow.Cells[0].Value;
+                var product = productService.GetByID(id);
+                product.InitialPayment = true;
+                var result = productService.Update(product);
+                if (result)
+                {
+
+                    MessageBox.Show("Uğurlu əməliyyat.");
+
+                    btn_Approval.Visible = false;
+                    rdb_InitialPayment.Visible = false;
+
+                }
+                else
+                {
+                    MessageBox.Show("Uğursuz əməliyyat.");
+                }
+            }
+        }
+
+        private void ExportToExcel()
+        {
+              Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+                
+                Workbook workbook = excel.Workbooks.Add(Type.Missing);
+
+                excel.Visible = true;
+                Worksheet ws = workbook.Sheets["Sheet1"]; 
+                ws = workbook.ActiveSheet;
+                ws.Name = "Exported from gridview";
+                for (int i = 1; i < dgv_Control.Columns.Count + 1; i++)
+                {
+                    ws.Cells[1, i] = dgv_Control.Columns[i - 1].HeaderText;
+                }
+
+                for (int i = 0; i < dgv_Control.Rows.Count ; i++)
+                {
+                    for (int j = 0; j < dgv_Control.Columns.Count; j++)
+                    {
+                        ws.Cells[i + 2, j + 1] = dgv_Control.Rows[i].Cells[j].Value.ToString();
+                    }
+                }
+                
+
+           
+        }
+
+        private void exxeləIxracToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exceləIxracToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ExportToExcel();
+        }
+
+        private void ButtonFalse()
+        {
+            btn_WasPaid.Visible = false;
+            btn_Contact.Visible = false;
+            btn_WasSent.Visible = false;
+            btn_Approval.Visible = false;
+            rdb_InitialPayment.Visible = false;
+        }
+
+        private void btn_Remove_Click(object sender, EventArgs e)
+        {
+            Guid id = (Guid)dgv_Control.CurrentRow.Cells[0].Value;
+            string message = "Silmək İstədiyinizə Əminsizin?";
+            string title = "Bildiriş";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult dialog = MessageBox.Show(message, title, buttons);
+            if (dialog == DialogResult.Yes)
+            {
+
+                var result = productService.Remove(id);
+                if (result)
+                {
+                    MessageBox.Show("Silindi.");
+                    GetAllProduct();
+
+                }
+                else
+                {
+                    MessageBox.Show("Xəta.");
+                }
+            }
+            
+            
+        }
+
+        private void btn_Update_Click(object sender, EventArgs e)
+        {
+            Guid id = (Guid)dgv_Control.CurrentRow.Cells[0].Value;
+            Static.ProductİdForUpdate = id;
+            UpdateProductForm updateProductForm = new UpdateProductForm();
+            updateProductForm.ShowDialog();
         }
     }
 }

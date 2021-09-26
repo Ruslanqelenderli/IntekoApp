@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,18 +43,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IGenericService.cs" />
+    <Compile Include="Abstract\ILogService.cs" />
     <Compile Include="Abstract\IPhoneService.cs" />
     <Compile Include="Abstract\IProductService.cs" />
     <Compile Include="Abstract\IUserService.cs" />
+    <Compile Include="Concrete\LogManager.cs" />
     <Compile Include="Concrete\PhoneManager.cs" />
     <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="Concrete\UserManager.cs" />
     <Compile Include="Enums\ProductStatus.cs" />
     <Compile Include="Enums\Status.cs" />
+    <Compile Include="Models\LogModel.cs" />
     <Compile Include="Models\PhoneModel.cs" />
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Static\Static.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

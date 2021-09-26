@@ -144,9 +144,23 @@ namespace Proj.DataAccess.Concrete.EF
             }
         }
 
-        public bool Remove(Product model)
+        public bool Remove(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (var db = new IntekoDbContext())
+                {
+                    var product = db.Products.FirstOrDefault(x => x.Id == id);
+                    db.Products.Remove(product);
+                    db.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
         }
 
         public bool SentMethod(Guid id)
@@ -171,7 +185,21 @@ namespace Proj.DataAccess.Concrete.EF
 
         public bool Update(Product model)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (var db = new IntekoDbContext())
+                {
+                    
+                    db.Entry(model).State = EntityState.Modified;
+                    db.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
         }
     }
 }

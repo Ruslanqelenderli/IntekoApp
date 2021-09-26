@@ -10,8 +10,7 @@ namespace Proj.Business.Abstract
     {
         
         bool Create(TModel model);
-        bool Update(TModel model);
-        bool Remove(TModel model);
+        bool Remove(IdType id);
         
     }
 }

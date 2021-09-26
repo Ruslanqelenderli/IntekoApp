@@ -70,12 +70,13 @@ namespace Proj.DataAccess.Concrete.EF
             }
         }
 
-        public bool Remove(User model)
+        public bool Remove(Guid id)
         {
             try
             {
                 using (var db = new IntekoDbContext())
                 {
+                    var model = db.Users.FirstOrDefault(x => x.Id == id);
                     db.Users.Remove(model);
                     db.SaveChanges();
                     return true;

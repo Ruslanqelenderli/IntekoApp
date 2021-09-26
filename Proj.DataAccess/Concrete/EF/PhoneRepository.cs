@@ -17,7 +17,7 @@ namespace Proj.DataAccess.Concrete.EF
             {
                 using (var db = new IntekoDbContext())
                 {
-                    db.Phone.Add(model);
+                    db.Phones.Add(model);
                     db.SaveChanges();
                     return true;
                 }
@@ -43,13 +43,13 @@ namespace Proj.DataAccess.Concrete.EF
         {
             using (var db = new IntekoDbContext())
             {
-                var phoneNumbers=db.Phone.Where(x => x.ProductId == id).ToList();
+                var phoneNumbers=db.Phones.Where(x => x.ProductId == id).ToList();
                 
                 return phoneNumbers;
             }
         }
 
-        public bool Remove(Phone model)
+        public bool Remove(Guid id)
         {
             throw new NotImplementedException();
         }

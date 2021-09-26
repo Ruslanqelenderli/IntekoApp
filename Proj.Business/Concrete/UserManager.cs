@@ -58,21 +58,11 @@ namespace Proj.Business.Concrete
             return userRepository.GetByID(id);
         }
 
-        public bool Remove(UserModel userModel)
+        public bool Remove(Guid id)
         {
-            if (userModel != null)
-            {
-                var model = new User();
-                model.Name = userModel.Name;
-                model.Surname = userModel.Surname;
-                model.UserName = userModel.UserName;
-                model.Email = userModel.Email;
-                model.PhoneNumber = userModel.PhoneNumber;
-                model.Password = userModel.Password;
-                model.Status = Status.Employee.ToString();
-                return userRepository.Remove(model);
-            }
-            return false;
+            
+                return userRepository.Remove(id);
+            
         }
 
         public bool Update(UserModel userModel)

@@ -16,7 +16,8 @@ namespace Proj.Inteko.MyForms.ManageForms
 {
     public partial class RegisterForm : Form
     {
-        
+        IUserService userService = new UserManager(new UserRepository());
+        ILogService logService = new LogManager(new LogRepository());
         public RegisterForm()
         {
             InitializeComponent();
@@ -30,29 +31,38 @@ namespace Proj.Inteko.MyForms.ManageForms
             {
                 if (CheckPassword())
                 {
-                    IUserService userService = new UserManager(new UserRepository());
-                    var model = new UserModel()
+                    if (!CheckUserName())
                     {
-                        Name = txb_Name.Text,
-                        Surname = txb_Surname.Text,
-                        UserName = txb_UserName.Text,
-                        Email = txb_Email.Text,
-                        PhoneNumber=txb_PhoneNumber.Text,
-                        Password = txb_Password.Text
-                    };
-                    userService.Create(model);
-                    string message = "İstifadəçi uğurla yaradıldı.Login səhifəsinə qayıtmaq istəyirsiniz?";
-                    string title = "Bildiriş";
-                    MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-                    DialogResult result = MessageBox.Show(message, title, buttons);
-                    if (result == DialogResult.Yes)
-                    {
-                        this.Close();
+                        var model = new UserModel()
+                        {
+                            Name = txb_Name.Text,
+                            Surname = txb_Surname.Text,
+                            UserName = txb_UserName.Text,
+                            Email = txb_Email.Text,
+                            PhoneNumber = txb_PhoneNumber.Text,
+                            Password = txb_Password.Text
+                        };
+                        userService.Create(model);
+                        AccountCreated();
+                        string message = "İstifadəçi uğurla yaradıldı.Login səhifəsinə qayıtmaq istəyirsiniz?";
+                        string title = "Bildiriş";
+                        MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                        DialogResult result = MessageBox.Show(message, title, buttons);
+                        if (result == DialogResult.Yes)
+                        {
+                            this.Close();
+                        }
+                        else
+                        {
+                            ClearTextBox();
+                        }
                     }
                     else
                     {
-                        ClearTextBox();
+                        MessageBox.Show("Bu istifadəçi adı istifadə olunub.");
                     }
+                    
+                    
                 }
                 else
                 {
@@ -102,6 +112,31 @@ namespace Proj.Inteko.MyForms.ManageForms
             txb_PhoneNumber.Clear();
             txb_Password.Clear();
             txb_PasswordAgain.Clear();
+        }
+        private bool CheckUserName()
+        {
+            bool result = false;
+            foreach (var user in userService.GetAll())
+            {
+                if (txb_UserName.Text == user.UserName)
+                {
+                    result = true;
+                }
+            }
+            return result;
+        }
+        private void AccountCreated()
+        {
+            LogModel model = new LogModel()
+            {
+                Description = txb_UserName.Text + " istifadəçi adında hesab yaradıldı.",
+                CreateDate = DateTime.Now
+            };
+            var result = logService.Create(model);
+            if (!result)
+            {
+                MessageBox.Show("Log Xətası.");
+            }
         }
     }
 }

@@ -13,6 +13,7 @@ namespace Proj.DataAccess.Dal.Context
         public IntekoDbContext() : base("myDb") { }
         public DbSet<User> Users { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<Phone> Phone { get; set; }
+        public DbSet<Phone> Phones { get; set; }
+        public DbSet<Log> Logs { get; set; }
     }
 }

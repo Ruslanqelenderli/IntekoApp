@@ -16,5 +16,8 @@ namespace Proj.Business.Abstract
         void CheckPaid();
         bool SentMethod(Guid id);
         bool PaidMethod(Guid id);
+
+        bool Update(ProductModel model);
+        bool Update(Product model);
     }
 }

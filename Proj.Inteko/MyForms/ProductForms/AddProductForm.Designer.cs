@@ -83,7 +83,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_Name.AutoSize = true;
             this.lbl_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Name.Location = new System.Drawing.Point(54, 46);
+            this.lbl_Name.Location = new System.Drawing.Point(60, 35);
             this.lbl_Name.Name = "lbl_Name";
             this.lbl_Name.Size = new System.Drawing.Size(25, 17);
             this.lbl_Name.TabIndex = 0;
@@ -91,7 +91,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_Name
             // 
-            this.txb_Name.Location = new System.Drawing.Point(57, 75);
+            this.txb_Name.Location = new System.Drawing.Point(63, 64);
             this.txb_Name.Name = "txb_Name";
             this.txb_Name.Size = new System.Drawing.Size(123, 20);
             this.txb_Name.TabIndex = 1;
@@ -125,7 +125,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_Surname.AutoSize = true;
             this.lbl_Surname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Surname.Location = new System.Drawing.Point(54, 117);
+            this.lbl_Surname.Location = new System.Drawing.Point(60, 106);
             this.lbl_Surname.Name = "lbl_Surname";
             this.lbl_Surname.Size = new System.Drawing.Size(48, 17);
             this.lbl_Surname.TabIndex = 0;
@@ -133,7 +133,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_Surname
             // 
-            this.txb_Surname.Location = new System.Drawing.Point(57, 146);
+            this.txb_Surname.Location = new System.Drawing.Point(63, 135);
             this.txb_Surname.Name = "txb_Surname";
             this.txb_Surname.Size = new System.Drawing.Size(123, 20);
             this.txb_Surname.TabIndex = 2;
@@ -142,7 +142,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_CompanyName.AutoSize = true;
             this.lbl_CompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CompanyName.Location = new System.Drawing.Point(54, 187);
+            this.lbl_CompanyName.Location = new System.Drawing.Point(60, 176);
             this.lbl_CompanyName.Name = "lbl_CompanyName";
             this.lbl_CompanyName.Size = new System.Drawing.Size(77, 17);
             this.lbl_CompanyName.TabIndex = 0;
@@ -150,7 +150,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_CompanyName
             // 
-            this.txb_CompanyName.Location = new System.Drawing.Point(57, 216);
+            this.txb_CompanyName.Location = new System.Drawing.Point(63, 205);
             this.txb_CompanyName.Name = "txb_CompanyName";
             this.txb_CompanyName.Size = new System.Drawing.Size(123, 20);
             this.txb_CompanyName.TabIndex = 3;
@@ -159,7 +159,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_VoenPassword.AutoSize = true;
             this.lbl_VoenPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_VoenPassword.Location = new System.Drawing.Point(54, 251);
+            this.lbl_VoenPassword.Location = new System.Drawing.Point(60, 240);
             this.lbl_VoenPassword.Name = "lbl_VoenPassword";
             this.lbl_VoenPassword.Size = new System.Drawing.Size(71, 17);
             this.lbl_VoenPassword.TabIndex = 0;
@@ -167,7 +167,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_VoenPassword
             // 
-            this.txb_VoenPassword.Location = new System.Drawing.Point(57, 280);
+            this.txb_VoenPassword.Location = new System.Drawing.Point(63, 269);
             this.txb_VoenPassword.Name = "txb_VoenPassword";
             this.txb_VoenPassword.Size = new System.Drawing.Size(123, 20);
             this.txb_VoenPassword.TabIndex = 4;
@@ -176,7 +176,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_District.AutoSize = true;
             this.lbl_District.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_District.Location = new System.Drawing.Point(54, 322);
+            this.lbl_District.Location = new System.Drawing.Point(60, 311);
             this.lbl_District.Name = "lbl_District";
             this.lbl_District.Size = new System.Drawing.Size(49, 17);
             this.lbl_District.TabIndex = 0;
@@ -184,7 +184,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_District
             // 
-            this.txb_District.Location = new System.Drawing.Point(57, 351);
+            this.txb_District.Location = new System.Drawing.Point(63, 340);
             this.txb_District.Name = "txb_District";
             this.txb_District.Size = new System.Drawing.Size(123, 20);
             this.txb_District.TabIndex = 5;
@@ -193,7 +193,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_Address.AutoSize = true;
             this.lbl_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Address.Location = new System.Drawing.Point(54, 394);
+            this.lbl_Address.Location = new System.Drawing.Point(60, 383);
             this.lbl_Address.Name = "lbl_Address";
             this.lbl_Address.Size = new System.Drawing.Size(49, 17);
             this.lbl_Address.TabIndex = 0;
@@ -201,7 +201,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_Address
             // 
-            this.txb_Address.Location = new System.Drawing.Point(57, 423);
+            this.txb_Address.Location = new System.Drawing.Point(63, 412);
             this.txb_Address.Name = "txb_Address";
             this.txb_Address.Size = new System.Drawing.Size(123, 20);
             this.txb_Address.TabIndex = 6;
@@ -210,7 +210,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_ApproximateLocation.AutoSize = true;
             this.lbl_ApproximateLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ApproximateLocation.Location = new System.Drawing.Point(244, 46);
+            this.lbl_ApproximateLocation.Location = new System.Drawing.Point(250, 35);
             this.lbl_ApproximateLocation.Name = "lbl_ApproximateLocation";
             this.lbl_ApproximateLocation.Size = new System.Drawing.Size(115, 17);
             this.lbl_ApproximateLocation.TabIndex = 0;
@@ -218,7 +218,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_ApproximateLocation
             // 
-            this.txb_ApproximateLocation.Location = new System.Drawing.Point(247, 75);
+            this.txb_ApproximateLocation.Location = new System.Drawing.Point(253, 64);
             this.txb_ApproximateLocation.Name = "txb_ApproximateLocation";
             this.txb_ApproximateLocation.Size = new System.Drawing.Size(123, 20);
             this.txb_ApproximateLocation.TabIndex = 7;
@@ -227,7 +227,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_CashireModel.AutoSize = true;
             this.lbl_CashireModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CashireModel.Location = new System.Drawing.Point(244, 116);
+            this.lbl_CashireModel.Location = new System.Drawing.Point(250, 105);
             this.lbl_CashireModel.Name = "lbl_CashireModel";
             this.lbl_CashireModel.Size = new System.Drawing.Size(92, 17);
             this.lbl_CashireModel.TabIndex = 0;
@@ -235,7 +235,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_CashireModel
             // 
-            this.txb_CashireModel.Location = new System.Drawing.Point(247, 145);
+            this.txb_CashireModel.Location = new System.Drawing.Point(253, 134);
             this.txb_CashireModel.Name = "txb_CashireModel";
             this.txb_CashireModel.Size = new System.Drawing.Size(123, 20);
             this.txb_CashireModel.TabIndex = 8;
@@ -244,7 +244,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_ContractNo.AutoSize = true;
             this.lbl_ContractNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ContractNo.Location = new System.Drawing.Point(244, 187);
+            this.lbl_ContractNo.Location = new System.Drawing.Point(250, 176);
             this.lbl_ContractNo.Name = "lbl_ContractNo";
             this.lbl_ContractNo.Size = new System.Drawing.Size(120, 17);
             this.lbl_ContractNo.TabIndex = 0;
@@ -252,7 +252,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_ContractNo
             // 
-            this.txb_ContractNo.Location = new System.Drawing.Point(247, 216);
+            this.txb_ContractNo.Location = new System.Drawing.Point(253, 205);
             this.txb_ContractNo.Name = "txb_ContractNo";
             this.txb_ContractNo.Size = new System.Drawing.Size(123, 20);
             this.txb_ContractNo.TabIndex = 9;
@@ -261,7 +261,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_EmployeeWhoSells.AutoSize = true;
             this.lbl_EmployeeWhoSells.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_EmployeeWhoSells.Location = new System.Drawing.Point(244, 321);
+            this.lbl_EmployeeWhoSells.Location = new System.Drawing.Point(250, 310);
             this.lbl_EmployeeWhoSells.Name = "lbl_EmployeeWhoSells";
             this.lbl_EmployeeWhoSells.Size = new System.Drawing.Size(69, 17);
             this.lbl_EmployeeWhoSells.TabIndex = 0;
@@ -269,7 +269,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_EmployeeWhoSells
             // 
-            this.txb_EmployeeWhoSells.Location = new System.Drawing.Point(247, 350);
+            this.txb_EmployeeWhoSells.Location = new System.Drawing.Point(253, 339);
             this.txb_EmployeeWhoSells.Name = "txb_EmployeeWhoSells";
             this.txb_EmployeeWhoSells.Size = new System.Drawing.Size(123, 20);
             this.txb_EmployeeWhoSells.TabIndex = 11;
@@ -278,7 +278,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_TypeOfPayment.AutoSize = true;
             this.lbl_TypeOfPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TypeOfPayment.Location = new System.Drawing.Point(244, 392);
+            this.lbl_TypeOfPayment.Location = new System.Drawing.Point(250, 381);
             this.lbl_TypeOfPayment.Name = "lbl_TypeOfPayment";
             this.lbl_TypeOfPayment.Size = new System.Drawing.Size(101, 17);
             this.lbl_TypeOfPayment.TabIndex = 0;
@@ -286,7 +286,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_TypeOfPayment
             // 
-            this.txb_TypeOfPayment.Location = new System.Drawing.Point(247, 421);
+            this.txb_TypeOfPayment.Location = new System.Drawing.Point(253, 410);
             this.txb_TypeOfPayment.Name = "txb_TypeOfPayment";
             this.txb_TypeOfPayment.Size = new System.Drawing.Size(123, 20);
             this.txb_TypeOfPayment.TabIndex = 12;
@@ -295,7 +295,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_Price.AutoSize = true;
             this.lbl_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Price.Location = new System.Drawing.Point(435, 46);
+            this.lbl_Price.Location = new System.Drawing.Point(441, 35);
             this.lbl_Price.Name = "lbl_Price";
             this.lbl_Price.Size = new System.Drawing.Size(108, 17);
             this.lbl_Price.TabIndex = 0;
@@ -303,7 +303,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_Price
             // 
-            this.txb_Price.Location = new System.Drawing.Point(438, 75);
+            this.txb_Price.Location = new System.Drawing.Point(444, 64);
             this.txb_Price.Name = "txb_Price";
             this.txb_Price.Size = new System.Drawing.Size(123, 20);
             this.txb_Price.TabIndex = 13;
@@ -312,7 +312,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_ServicePrice.AutoSize = true;
             this.lbl_ServicePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ServicePrice.Location = new System.Drawing.Point(435, 117);
+            this.lbl_ServicePrice.Location = new System.Drawing.Point(441, 106);
             this.lbl_ServicePrice.Name = "lbl_ServicePrice";
             this.lbl_ServicePrice.Size = new System.Drawing.Size(97, 17);
             this.lbl_ServicePrice.TabIndex = 0;
@@ -320,7 +320,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_ServicePrice
             // 
-            this.txb_ServicePrice.Location = new System.Drawing.Point(438, 146);
+            this.txb_ServicePrice.Location = new System.Drawing.Point(444, 135);
             this.txb_ServicePrice.Name = "txb_ServicePrice";
             this.txb_ServicePrice.Size = new System.Drawing.Size(123, 20);
             this.txb_ServicePrice.TabIndex = 14;
@@ -329,7 +329,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_EmployeeWhoConnects.AutoSize = true;
             this.lbl_EmployeeWhoConnects.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_EmployeeWhoConnects.Location = new System.Drawing.Point(244, 257);
+            this.lbl_EmployeeWhoConnects.Location = new System.Drawing.Point(250, 246);
             this.lbl_EmployeeWhoConnects.Name = "lbl_EmployeeWhoConnects";
             this.lbl_EmployeeWhoConnects.Size = new System.Drawing.Size(74, 17);
             this.lbl_EmployeeWhoConnects.TabIndex = 0;
@@ -337,7 +337,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_EmployeeWhoConnects
             // 
-            this.txb_EmployeeWhoConnects.Location = new System.Drawing.Point(247, 286);
+            this.txb_EmployeeWhoConnects.Location = new System.Drawing.Point(253, 275);
             this.txb_EmployeeWhoConnects.Name = "txb_EmployeeWhoConnects";
             this.txb_EmployeeWhoConnects.Size = new System.Drawing.Size(123, 20);
             this.txb_EmployeeWhoConnects.TabIndex = 10;
@@ -346,7 +346,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_SellesPayment.AutoSize = true;
             this.lbl_SellesPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_SellesPayment.Location = new System.Drawing.Point(435, 187);
+            this.lbl_SellesPayment.Location = new System.Drawing.Point(441, 176);
             this.lbl_SellesPayment.Name = "lbl_SellesPayment";
             this.lbl_SellesPayment.Size = new System.Drawing.Size(124, 17);
             this.lbl_SellesPayment.TabIndex = 0;
@@ -354,7 +354,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_SellesPayment
             // 
-            this.txb_SellesPayment.Location = new System.Drawing.Point(438, 216);
+            this.txb_SellesPayment.Location = new System.Drawing.Point(444, 205);
             this.txb_SellesPayment.Name = "txb_SellesPayment";
             this.txb_SellesPayment.Size = new System.Drawing.Size(123, 20);
             this.txb_SellesPayment.TabIndex = 15;
@@ -363,7 +363,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_WrittenByOrxan.AutoSize = true;
             this.lbl_WrittenByOrxan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_WrittenByOrxan.Location = new System.Drawing.Point(435, 258);
+            this.lbl_WrittenByOrxan.Location = new System.Drawing.Point(441, 247);
             this.lbl_WrittenByOrxan.Name = "lbl_WrittenByOrxan";
             this.lbl_WrittenByOrxan.Size = new System.Drawing.Size(90, 17);
             this.lbl_WrittenByOrxan.TabIndex = 0;
@@ -371,7 +371,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_WrittenByOrxan
             // 
-            this.txb_WrittenByOrxan.Location = new System.Drawing.Point(438, 287);
+            this.txb_WrittenByOrxan.Location = new System.Drawing.Point(444, 276);
             this.txb_WrittenByOrxan.Name = "txb_WrittenByOrxan";
             this.txb_WrittenByOrxan.Size = new System.Drawing.Size(123, 20);
             this.txb_WrittenByOrxan.TabIndex = 16;
@@ -380,7 +380,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_TaxInterest.AutoSize = true;
             this.lbl_TaxInterest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TaxInterest.Location = new System.Drawing.Point(435, 328);
+            this.lbl_TaxInterest.Location = new System.Drawing.Point(441, 317);
             this.lbl_TaxInterest.Name = "lbl_TaxInterest";
             this.lbl_TaxInterest.Size = new System.Drawing.Size(74, 17);
             this.lbl_TaxInterest.TabIndex = 0;
@@ -388,14 +388,14 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // txb_TaxInterest
             // 
-            this.txb_TaxInterest.Location = new System.Drawing.Point(438, 357);
+            this.txb_TaxInterest.Location = new System.Drawing.Point(444, 346);
             this.txb_TaxInterest.Name = "txb_TaxInterest";
             this.txb_TaxInterest.Size = new System.Drawing.Size(123, 20);
             this.txb_TaxInterest.TabIndex = 17;
             // 
             // dt_RegistrationDate
             // 
-            this.dt_RegistrationDate.Location = new System.Drawing.Point(438, 423);
+            this.dt_RegistrationDate.Location = new System.Drawing.Point(444, 412);
             this.dt_RegistrationDate.Name = "dt_RegistrationDate";
             this.dt_RegistrationDate.Size = new System.Drawing.Size(123, 20);
             this.dt_RegistrationDate.TabIndex = 18;
@@ -404,7 +404,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_RegistrationDate.AutoSize = true;
             this.lbl_RegistrationDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RegistrationDate.Location = new System.Drawing.Point(435, 394);
+            this.lbl_RegistrationDate.Location = new System.Drawing.Point(441, 383);
             this.lbl_RegistrationDate.Name = "lbl_RegistrationDate";
             this.lbl_RegistrationDate.Size = new System.Drawing.Size(109, 17);
             this.lbl_RegistrationDate.TabIndex = 0;
@@ -414,7 +414,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.btn_Add.BackColor = System.Drawing.Color.PaleGreen;
             this.btn_Add.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btn_Add.Location = new System.Drawing.Point(212, 608);
+            this.btn_Add.Location = new System.Drawing.Point(218, 597);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(183, 61);
             this.btn_Add.TabIndex = 22;
@@ -437,7 +437,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // rb_Paid
             // 
             this.rb_Paid.AutoSize = true;
-            this.rb_Paid.Location = new System.Drawing.Point(447, 490);
+            this.rb_Paid.Location = new System.Drawing.Point(453, 479);
             this.rb_Paid.Name = "rb_Paid";
             this.rb_Paid.Size = new System.Drawing.Size(63, 17);
             this.rb_Paid.TabIndex = 20;
@@ -449,7 +449,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_InitialPayment.AutoSize = true;
             this.lbl_InitialPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_InitialPayment.Location = new System.Drawing.Point(435, 465);
+            this.lbl_InitialPayment.Location = new System.Drawing.Point(441, 454);
             this.lbl_InitialPayment.Name = "lbl_InitialPayment";
             this.lbl_InitialPayment.Size = new System.Drawing.Size(53, 17);
             this.lbl_InitialPayment.TabIndex = 0;
@@ -458,7 +458,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // rb_NotPaid
             // 
             this.rb_NotPaid.AutoSize = true;
-            this.rb_NotPaid.Location = new System.Drawing.Point(447, 513);
+            this.rb_NotPaid.Location = new System.Drawing.Point(453, 502);
             this.rb_NotPaid.Name = "rb_NotPaid";
             this.rb_NotPaid.Size = new System.Drawing.Size(77, 17);
             this.rb_NotPaid.TabIndex = 21;
@@ -468,7 +468,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             // rtxb_Info
             // 
-            this.rtxb_Info.Location = new System.Drawing.Point(57, 490);
+            this.rtxb_Info.Location = new System.Drawing.Point(63, 479);
             this.rtxb_Info.Name = "rtxb_Info";
             this.rtxb_Info.Size = new System.Drawing.Size(320, 77);
             this.rtxb_Info.TabIndex = 19;
@@ -478,7 +478,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             // 
             this.lbl_Info.AutoSize = true;
             this.lbl_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Info.Location = new System.Drawing.Point(54, 465);
+            this.lbl_Info.Location = new System.Drawing.Point(60, 454);
             this.lbl_Info.Name = "lbl_Info";
             this.lbl_Info.Size = new System.Drawing.Size(61, 17);
             this.lbl_Info.TabIndex = 0;

@@ -52,9 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IGenericRepository.cs" />
+    <Compile Include="Abstract\ILogRepository.cs" />
     <Compile Include="Abstract\IPhoneRepository.cs" />
     <Compile Include="Abstract\IProductRepository.cs" />
     <Compile Include="Abstract\IUserRepository.cs" />
+    <Compile Include="Concrete\EF\LogRepository.cs" />
     <Compile Include="Concrete\EF\PhoneRepository.cs" />
     <Compile Include="Concrete\EF\ProductRepository.cs" />
     <Compile Include="Concrete\EF\UserRepository.cs" />
@@ -82,6 +84,10 @@
     <Compile Include="Migrations\202109241348071_mistake.cs" />
     <Compile Include="Migrations\202109241348071_mistake.designer.cs">
       <DependentUpon>202109241348071_mistake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109261627286_Log.cs" />
+    <Compile Include="Migrations\202109261627286_Log.designer.cs">
+      <DependentUpon>202109261627286_Log.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109241348071_mistake.resx">
       <DependentUpon>202109241348071_mistake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109261627286_Log.resx">
+      <DependentUpon>202109261627286_Log.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

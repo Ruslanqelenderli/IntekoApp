@@ -1,5 +1,6 @@
 ﻿using Proj.Business.Abstract;
 using Proj.Business.Concrete;
+using Proj.Business.Static;
 using Proj.DataAccess.Concrete.EF;
 using System;
 using System.Collections.Generic;

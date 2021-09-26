@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Abstract\BaseEntity.cs" />
     <Compile Include="Abstract\IBaseEntity.cs" />
+    <Compile Include="Concrete\Log.cs" />
     <Compile Include="Concrete\Phone.cs" />
     <Compile Include="Concrete\Product.cs" />
     <Compile Include="Concrete\User.cs" />
