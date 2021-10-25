@@ -1,5 +1,7 @@
 ﻿using Proj.Inteko.MyForms;
+using Proj.Inteko.MyForms.BridgeForms;
 using Proj.Inteko.MyForms.ProductForms;
+using Proj.Inteko.MyForms.RegulationForms;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -138,5 +138,25 @@ namespace Proj.Inteko.MyForms.ManageForms
                 MessageBox.Show("Log Xətası.");
             }
         }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void RegisterForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+            
+            
+        }
+
+        private void RegisterForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+            
+        }
     }
 }

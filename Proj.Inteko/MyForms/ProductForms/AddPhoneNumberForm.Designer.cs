@@ -62,7 +62,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.btn_AddNumber.Location = new System.Drawing.Point(150, 243);
             this.btn_AddNumber.Name = "btn_AddNumber";
             this.btn_AddNumber.Size = new System.Drawing.Size(75, 23);
-            this.btn_AddNumber.TabIndex = 2;
+            this.btn_AddNumber.TabIndex = 5;
             this.btn_AddNumber.Text = "Əlavə et";
             this.btn_AddNumber.UseVisualStyleBackColor = true;
             this.btn_AddNumber.Click += new System.EventHandler(this.btn_AddNumber_Click);
@@ -81,7 +81,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.txb_Surname.Location = new System.Drawing.Point(135, 100);
             this.txb_Surname.Name = "txb_Surname";
             this.txb_Surname.Size = new System.Drawing.Size(100, 20);
-            this.txb_Surname.TabIndex = 1;
+            this.txb_Surname.TabIndex = 2;
             // 
             // label3
             // 
@@ -97,7 +97,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.txb_Position.Location = new System.Drawing.Point(135, 151);
             this.txb_Position.Name = "txb_Position";
             this.txb_Position.Size = new System.Drawing.Size(100, 20);
-            this.txb_Position.TabIndex = 1;
+            this.txb_Position.TabIndex = 3;
             // 
             // label4
             // 
@@ -113,7 +113,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.txb_Number.Location = new System.Drawing.Point(135, 205);
             this.txb_Number.Name = "txb_Number";
             this.txb_Number.Size = new System.Drawing.Size(100, 20);
-            this.txb_Number.TabIndex = 1;
+            this.txb_Number.TabIndex = 4;
             // 
             // AddPhoneNumberForm
             // 
@@ -131,7 +131,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AddPhoneNumberForm";
-            this.Text = "AddPhoneNumberForm";
+            this.Text = "Telefon";
             this.ResumeLayout(false);
             this.PerformLayout();
 

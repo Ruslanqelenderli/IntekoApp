@@ -42,7 +42,6 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.lbl_Price = new System.Windows.Forms.Label();
             this.lbl_Info = new System.Windows.Forms.Label();
             this.lbl_Address = new System.Windows.Forms.Label();
-            this.txb_TypeOfPayment = new System.Windows.Forms.TextBox();
             this.txb_District = new System.Windows.Forms.TextBox();
             this.lbl_TypeOfPayment = new System.Windows.Forms.Label();
             this.lbl_District = new System.Windows.Forms.Label();
@@ -52,11 +51,11 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.txb_VoenPassword = new System.Windows.Forms.TextBox();
             this.lbl_EmployeeWhoSells = new System.Windows.Forms.Label();
             this.lbl_VoenPassword = new System.Windows.Forms.Label();
-            this.txb_TaxInterest = new System.Windows.Forms.TextBox();
+            this.txb_OfficeMncPercent = new System.Windows.Forms.TextBox();
             this.txb_CompanyName = new System.Windows.Forms.TextBox();
             this.lbl_InitialPayment = new System.Windows.Forms.Label();
             this.lbl_RegistrationDate = new System.Windows.Forms.Label();
-            this.lbl_TaxInterest = new System.Windows.Forms.Label();
+            this.lbl_OfficeMncPercent = new System.Windows.Forms.Label();
             this.lbl_CompanyName = new System.Windows.Forms.Label();
             this.txb_ContractNo = new System.Windows.Forms.TextBox();
             this.txb_WrittenByOrxan = new System.Windows.Forms.TextBox();
@@ -71,6 +70,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.txb_Name = new System.Windows.Forms.TextBox();
             this.lbl_Name = new System.Windows.Forms.Label();
             this.btn_Update = new System.Windows.Forms.Button();
+            this.cmb_TypeOfPayment = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // rtxb_Info
@@ -188,13 +188,6 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.lbl_Address.TabIndex = 29;
             this.lbl_Address.Text = "Ünvan";
             // 
-            // txb_TypeOfPayment
-            // 
-            this.txb_TypeOfPayment.Location = new System.Drawing.Point(211, 403);
-            this.txb_TypeOfPayment.Name = "txb_TypeOfPayment";
-            this.txb_TypeOfPayment.Size = new System.Drawing.Size(123, 20);
-            this.txb_TypeOfPayment.TabIndex = 53;
-            // 
             // txb_District
             // 
             this.txb_District.Location = new System.Drawing.Point(21, 333);
@@ -273,12 +266,12 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.lbl_VoenPassword.TabIndex = 41;
             this.lbl_VoenPassword.Text = "Vöen-Kod";
             // 
-            // txb_TaxInterest
+            // txb_OfficeMncPercent
             // 
-            this.txb_TaxInterest.Location = new System.Drawing.Point(402, 339);
-            this.txb_TaxInterest.Name = "txb_TaxInterest";
-            this.txb_TaxInterest.Size = new System.Drawing.Size(123, 20);
-            this.txb_TaxInterest.TabIndex = 58;
+            this.txb_OfficeMncPercent.Location = new System.Drawing.Point(402, 339);
+            this.txb_OfficeMncPercent.Name = "txb_OfficeMncPercent";
+            this.txb_OfficeMncPercent.Size = new System.Drawing.Size(123, 20);
+            this.txb_OfficeMncPercent.TabIndex = 58;
             // 
             // txb_CompanyName
             // 
@@ -307,15 +300,15 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.lbl_RegistrationDate.TabIndex = 27;
             this.lbl_RegistrationDate.Text = "Qeydiyyat Tarixi";
             // 
-            // lbl_TaxInterest
+            // lbl_OfficeMncPercent
             // 
-            this.lbl_TaxInterest.AutoSize = true;
-            this.lbl_TaxInterest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TaxInterest.Location = new System.Drawing.Point(399, 310);
-            this.lbl_TaxInterest.Name = "lbl_TaxInterest";
-            this.lbl_TaxInterest.Size = new System.Drawing.Size(74, 17);
-            this.lbl_TaxInterest.TabIndex = 28;
-            this.lbl_TaxInterest.Text = "Vergi Faizi";
+            this.lbl_OfficeMncPercent.AutoSize = true;
+            this.lbl_OfficeMncPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_OfficeMncPercent.Location = new System.Drawing.Point(399, 310);
+            this.lbl_OfficeMncPercent.Name = "lbl_OfficeMncPercent";
+            this.lbl_OfficeMncPercent.Size = new System.Drawing.Size(96, 17);
+            this.lbl_OfficeMncPercent.TabIndex = 28;
+            this.lbl_OfficeMncPercent.Text = "Ofis Mnc Faizi";
             // 
             // lbl_CompanyName
             // 
@@ -439,11 +432,20 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.btn_Update.UseVisualStyleBackColor = true;
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
+            // cmb_TypeOfPayment
+            // 
+            this.cmb_TypeOfPayment.FormattingEnabled = true;
+            this.cmb_TypeOfPayment.Location = new System.Drawing.Point(211, 405);
+            this.cmb_TypeOfPayment.Name = "cmb_TypeOfPayment";
+            this.cmb_TypeOfPayment.Size = new System.Drawing.Size(123, 21);
+            this.cmb_TypeOfPayment.TabIndex = 64;
+            // 
             // UpdateProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 588);
+            this.Controls.Add(this.cmb_TypeOfPayment);
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.rtxb_Info);
             this.Controls.Add(this.rb_NotPaid);
@@ -458,7 +460,6 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.Controls.Add(this.lbl_Price);
             this.Controls.Add(this.lbl_Info);
             this.Controls.Add(this.lbl_Address);
-            this.Controls.Add(this.txb_TypeOfPayment);
             this.Controls.Add(this.txb_District);
             this.Controls.Add(this.lbl_TypeOfPayment);
             this.Controls.Add(this.lbl_District);
@@ -468,11 +469,11 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.Controls.Add(this.txb_VoenPassword);
             this.Controls.Add(this.lbl_EmployeeWhoSells);
             this.Controls.Add(this.lbl_VoenPassword);
-            this.Controls.Add(this.txb_TaxInterest);
+            this.Controls.Add(this.txb_OfficeMncPercent);
             this.Controls.Add(this.txb_CompanyName);
             this.Controls.Add(this.lbl_InitialPayment);
             this.Controls.Add(this.lbl_RegistrationDate);
-            this.Controls.Add(this.lbl_TaxInterest);
+            this.Controls.Add(this.lbl_OfficeMncPercent);
             this.Controls.Add(this.lbl_CompanyName);
             this.Controls.Add(this.txb_ContractNo);
             this.Controls.Add(this.txb_WrittenByOrxan);
@@ -488,7 +489,7 @@ namespace Proj.Inteko.MyForms.ProductForms
             this.Controls.Add(this.lbl_Name);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "UpdateProductForm";
-            this.Text = "UpdateProductForm";
+            this.Text = "Müəssisə düzəliş";
             this.Load += new System.EventHandler(this.UpdateProductForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -510,7 +511,6 @@ namespace Proj.Inteko.MyForms.ProductForms
         private System.Windows.Forms.Label lbl_Price;
         private System.Windows.Forms.Label lbl_Info;
         private System.Windows.Forms.Label lbl_Address;
-        private System.Windows.Forms.TextBox txb_TypeOfPayment;
         private System.Windows.Forms.TextBox txb_District;
         private System.Windows.Forms.Label lbl_TypeOfPayment;
         private System.Windows.Forms.Label lbl_District;
@@ -520,11 +520,11 @@ namespace Proj.Inteko.MyForms.ProductForms
         private System.Windows.Forms.TextBox txb_VoenPassword;
         private System.Windows.Forms.Label lbl_EmployeeWhoSells;
         private System.Windows.Forms.Label lbl_VoenPassword;
-        private System.Windows.Forms.TextBox txb_TaxInterest;
+        private System.Windows.Forms.TextBox txb_OfficeMncPercent;
         private System.Windows.Forms.TextBox txb_CompanyName;
         private System.Windows.Forms.Label lbl_InitialPayment;
         private System.Windows.Forms.Label lbl_RegistrationDate;
-        private System.Windows.Forms.Label lbl_TaxInterest;
+        private System.Windows.Forms.Label lbl_OfficeMncPercent;
         private System.Windows.Forms.Label lbl_CompanyName;
         private System.Windows.Forms.TextBox txb_ContractNo;
         private System.Windows.Forms.TextBox txb_WrittenByOrxan;
@@ -539,5 +539,6 @@ namespace Proj.Inteko.MyForms.ProductForms
         private System.Windows.Forms.TextBox txb_Name;
         private System.Windows.Forms.Label lbl_Name;
         private System.Windows.Forms.Button btn_Update;
+        private System.Windows.Forms.ComboBox cmb_TypeOfPayment;
     }
 }

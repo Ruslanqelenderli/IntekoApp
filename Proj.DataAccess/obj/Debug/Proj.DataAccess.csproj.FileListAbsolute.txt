@@ -14,9 +14,6 @@ C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.Dat
 C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.pdb
 C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations.Initial.resources
 C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.csproj.GenerateResource.cache
-C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations.UserName_And_Status.resources
-C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations.Product_And_Phone.resources
-C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations.İnfo.resources
-C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations.Payment.resources
-C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations.mistake.resources
-C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations.Log.resources
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations.No.resources
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations._new.resources
+C:\Users\Ruslan-PC\source\repos\IntekoProject\Proj.DataAccess\obj\Debug\Proj.DataAccess.Migrations.Surname.resources

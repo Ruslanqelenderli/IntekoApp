@@ -46,14 +46,16 @@ namespace Proj.DataAccess.Concrete.EF
             {
                 using (var db =new IntekoDbContext())
                 {
-                    var products=db.Products.Where(x=>x.PaymentStatus!= "Sent" && x.PaymentStatus != "Paid").ToList();
+                    var products=db.Products.Where(x=>x.PaymentStatus!= "Sent" ).Where(x=>x.PaymentStatus != "Paid").ToList();
 
                     foreach (var product in products)
                     {
                         var productDay=product.RegistrationDate.Day;
+                        var productMonth=product.RegistrationDate.Month;
                         var now = DateTime.Now.Day;
+                        var nowMonth = DateTime.Now.Month;
 
-                        if (productDay + 1 == now || productDay>=now)
+                        if ((productDay + 1 == now || productDay>=now)&&productMonth!=nowMonth)
                         {
                             product.PaymentStatus = "ItsTime";
                             db.Entry(product).State = EntityState.Modified;
@@ -94,7 +96,7 @@ namespace Proj.DataAccess.Concrete.EF
                 using (var db = new IntekoDbContext())
                 {
                     var products = new List<Product>();
-                    products = db.Products.ToList();
+                    products = db.Products.Include("Payment").Include("Cash").ToList();
                     return products;
                 }
             }
@@ -116,6 +118,29 @@ namespace Proj.DataAccess.Concrete.EF
                     return products;
                 }
 
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public void Numbering()
+        {
+            try
+            {
+                using (var db =new IntekoDbContext())
+                {
+                    var products = db.Products.OrderBy(x=>x.ContractNO).ToList();
+                    int count = 1;
+                    foreach (var product in products)
+                    {
+                        product.No = count;
+                        count++;
+                    }
+                    db.SaveChanges();
+                }
             }
             catch (Exception)
             {
@@ -163,7 +188,7 @@ namespace Proj.DataAccess.Concrete.EF
             }
         }
 
-        public bool SentMethod(Guid id)
+        public bool SentMethod(Guid id,string monthName)
         {
             try
             {
@@ -171,6 +196,16 @@ namespace Proj.DataAccess.Concrete.EF
                 {
                     var product = db.Products.FirstOrDefault(x => x.Id == id);
                     product.PaymentStatus = "Sent";
+                    product.SendDate = DateTime.Now;
+                    var model = new MonthlyPayment()
+                    {
+                        Id = Guid.NewGuid(),
+                        MonthName=monthName,
+                        ProductId=product.Id,
+                        Paid=false
+                    };
+
+                    db.MonthlyPayments.Add(model);
                     db.Entry(product).State = EntityState.Modified;
                     db.SaveChanges();
                     return true;

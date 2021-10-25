@@ -4,6 +4,7 @@ using Proj.Business.Models;
 using Proj.Business.Static;
 using Proj.DataAccess.Concrete.EF;
 using Proj.Entity.Concrete;
+using Proj.Inteko.MyForms.BridgeForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,7 +29,9 @@ namespace Proj.Inteko.MyForms.UserForms
 
         private void btn_Exit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            DirectorBridgeForm directorBridgeForm = new DirectorBridgeForm();
+            directorBridgeForm.ShowDialog();
         }
 
         private void UserInfoForm_Load(object sender, EventArgs e)

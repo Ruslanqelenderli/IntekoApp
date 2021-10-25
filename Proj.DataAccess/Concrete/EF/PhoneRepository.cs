@@ -51,7 +51,21 @@ namespace Proj.DataAccess.Concrete.EF
 
         public bool Remove(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (var db=new IntekoDbContext())
+                {
+                    var phoneNumber = db.Phones.FirstOrDefault(x=>x.Id==id);
+                    db.Phones.Remove(phoneNumber);
+                    db.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
         }
 
         public bool Update(Phone model)

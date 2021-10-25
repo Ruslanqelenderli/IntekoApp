@@ -5,6 +5,7 @@ using Proj.Business.Static;
 using Proj.DataAccess.Concrete.EF;
 using Proj.Entity.Concrete;
 using Proj.Inteko.MyForms.ProductForms;
+using Proj.Inteko.MyForms.ReportForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -60,6 +61,12 @@ namespace Proj.Inteko.MyForms.BridgeForms
             {
                 MessageBox.Show("Log Xətası.");
             }
+        }
+
+        private void btn_Report_Click(object sender, EventArgs e)
+        {
+            ReportForm reportForm = new ReportForm();
+            reportForm.ShowDialog();
         }
     }
 }

@@ -34,10 +34,34 @@ namespace Proj.Inteko.MyForms.ProductForms
         private void GetPhoneNumber()
         {
             var id = Static.Id;
-            var phoneNumbers=phoneService.GetProductId(id).Select(x=>new { Ad_Soyad=x.EmployeeName+" "+x.EmployeeSurname,
+            var phoneNumbers=phoneService.GetProductId(id).Select(x=>new {  Id=x.Id,
+                                                                           Ad_Soyad=x.EmployeeName+" "+x.EmployeeSurname,
                                                                            Vəzifə=x.Position,
                                                                            Nömrə=x.Number }).ToList();
             dgv_PhoneList.DataSource = phoneNumbers;
+        }
+
+        private void btn_Remove_Click(object sender, EventArgs e)
+        {
+            Guid id = (Guid)dgv_PhoneList.CurrentRow.Cells[0].Value;
+            var result = phoneService.Remove(id);
+            if (result)
+            {
+                MessageBox.Show("Uğurlu əməliyyat.");
+                var phoneNumbers = phoneService.GetProductId(Static.Id);
+                if (phoneNumbers.Count < 1)
+                {
+                    this.Close();
+                }
+                else
+                {
+                    GetPhoneNumber();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Xəta.");
+            }
         }
     }
 }

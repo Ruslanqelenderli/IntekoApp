@@ -43,31 +43,38 @@ namespace Proj.Business.Concrete
             {
                 Product entity = new Product()
                 {
-                    Id=Guid.NewGuid(),
+                    Id = Guid.NewGuid(),
                     Name = model.Name,
-                    Surname = model.Surname,
                     CompanyName = model.CompanyName,
-                    VoenPassword=model.VoenPassword,
-                    District=model.District,
-                    Address=model.Address,
-                    ApproximateLocation=model.ApproximateLocation,
-                    CashireModel=model.CashireModel,
-                    ContractNO=model.ContractNO,
-                    EmployeeWhoConnects=model.EmployeeWhoConnects,
-                    EmployeeWhoSells=model.EmployeeWhoSells,
-                    TypeOfPayment=model.TypeOfPayment,
-                    Price=model.Price,
-                    ServicePrice=model.ServicePrice,
-                    SellesPayment=model.SellesPayment,
-                    WrittenByOrxan=model.WrittenByOrxan,
-                    TaxInterest=model.TaxInterest,
-                    RegistrationDate=model.RegistrationDate,
-                    InitialPayment=model.InitialPayment,
-                    İnfo=model.İnfo,
-                    PaymentStatus=ProductStatus.ThereIsTime.ToString()
+                    VoenPassword = model.VoenPassword,
+                    District = model.District,
+                    Address = model.Address,
+                    ApproximateLocation = model.ApproximateLocation,
+                    CashId = model.CashId,
+                    EmployeeWhoConnects = model.EmployeeWhoConnects,
+                    EmployeeWhoSells = model.EmployeeWhoSells,
+                    PaymentId = model.PaymentId,
+                    Price = model.Price,
+                    ServicePrice = model.ServicePrice,
+                    SellesPayment = model.SellesPayment,
+                    WrittenByOrxan = model.WrittenByOrxan,
+                    RegistrationDate = model.RegistrationDate,
+                    InitialPayment = model.InitialPayment,
+                    İnfo = model.İnfo,
+                    PaymentStatus = ProductStatus.ThereIsTime.ToString(),
+                    OfficeMncPercent = model.OfficeMncPercent
                     
-
                 };
+                
+                if (model.InitialPayment == false)
+                {
+                    entity.PriceDebt = model.Price;
+                }
+                else
+                {
+                    entity.PriceDebt = 0;
+                }
+
                 return productRepository.Create(entity);
             }
             return false;
@@ -83,6 +90,11 @@ namespace Proj.Business.Concrete
             return productRepository.GetByID(id);
         }
 
+        public void Numbering()
+        {
+            productRepository.Numbering();
+        }
+
         public bool PaidMethod(Guid id)
         {
             return productRepository.PaidMethod(id);
@@ -93,9 +105,9 @@ namespace Proj.Business.Concrete
             return productRepository.Remove(id);
         }
 
-        public bool SentMethod(Guid id)
+        public bool SentMethod(Guid id,string monthName)
         {
-            return productRepository.SentMethod(id);
+            return productRepository.SentMethod(id,monthName);
         }
 
         public bool Update(Product model)
@@ -109,24 +121,21 @@ namespace Proj.Business.Concrete
             {
                 Product product = new Product()
                 {
-                    Id = Static.Static.ProductİdForUpdate,
+                    Id = Static.Static.ProductIdForUpdate,
                     Name = model.Name,
-                    Surname = model.Surname,
                     CompanyName = model.CompanyName,
                     VoenPassword = model.VoenPassword,
                     District = model.District,
                     Address = model.Address,
                     ApproximateLocation = model.ApproximateLocation,
-                    CashireModel = model.CashireModel,
-                    ContractNO = model.ContractNO,
+                    CashId = model.CashId,
                     EmployeeWhoConnects = model.EmployeeWhoConnects,
                     EmployeeWhoSells = model.EmployeeWhoSells,
-                    TypeOfPayment = model.TypeOfPayment,
+                    PaymentId = model.PaymentId,
                     Price = model.Price,
                     ServicePrice = model.ServicePrice,
                     SellesPayment = model.SellesPayment,
                     WrittenByOrxan = model.WrittenByOrxan,
-                    TaxInterest = model.TaxInterest,
                     RegistrationDate = model.RegistrationDate,
                     InitialPayment = model.InitialPayment,
                     İnfo = model.İnfo,

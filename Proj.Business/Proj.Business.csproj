@@ -42,18 +42,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICashService.cs" />
+    <Compile Include="Abstract\IExpenseService.cs" />
+    <Compile Include="Abstract\IExpenseTypeService.cs" />
     <Compile Include="Abstract\IGenericService.cs" />
     <Compile Include="Abstract\ILogService.cs" />
+    <Compile Include="Abstract\IMonthlyPaymentService.cs" />
+    <Compile Include="Abstract\IPaymentService.cs" />
     <Compile Include="Abstract\IPhoneService.cs" />
     <Compile Include="Abstract\IProductService.cs" />
     <Compile Include="Abstract\IUserService.cs" />
+    <Compile Include="Concrete\CashManager.cs" />
+    <Compile Include="Concrete\ExpenseManager.cs" />
+    <Compile Include="Concrete\ExpenseTypeManager.cs" />
     <Compile Include="Concrete\LogManager.cs" />
+    <Compile Include="Concrete\MonthlyPaymentManager.cs" />
+    <Compile Include="Concrete\PaymentManager.cs" />
     <Compile Include="Concrete\PhoneManager.cs" />
     <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="Concrete\UserManager.cs" />
     <Compile Include="Enums\ProductStatus.cs" />
     <Compile Include="Enums\Status.cs" />
+    <Compile Include="Models\CashModel.cs" />
+    <Compile Include="Models\ExpenseModel.cs" />
+    <Compile Include="Models\ExpenseTypeModel.cs" />
     <Compile Include="Models\LogModel.cs" />
+    <Compile Include="Models\MonthlyPaymentModel.cs" />
+    <Compile Include="Models\PaymentModel.cs" />
     <Compile Include="Models\PhoneModel.cs" />
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\UserModel.cs" />

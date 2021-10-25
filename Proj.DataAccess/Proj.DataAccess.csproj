@@ -51,43 +51,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICashRepository.cs" />
+    <Compile Include="Abstract\IExpenseRepository.cs" />
+    <Compile Include="Abstract\IExpenseTypeRepository.cs" />
     <Compile Include="Abstract\IGenericRepository.cs" />
     <Compile Include="Abstract\ILogRepository.cs" />
+    <Compile Include="Abstract\IMonthlyPaymentRepository.cs" />
+    <Compile Include="Abstract\IPaymentRepository.cs" />
     <Compile Include="Abstract\IPhoneRepository.cs" />
     <Compile Include="Abstract\IProductRepository.cs" />
     <Compile Include="Abstract\IUserRepository.cs" />
+    <Compile Include="Concrete\EF\CashRepository.cs" />
+    <Compile Include="Concrete\EF\ExpenseRepository.cs" />
+    <Compile Include="Concrete\EF\ExpenseTypeRepository.cs" />
     <Compile Include="Concrete\EF\LogRepository.cs" />
+    <Compile Include="Concrete\EF\MonthlyPaymentRepository.cs" />
+    <Compile Include="Concrete\EF\PaymentRepository.cs" />
     <Compile Include="Concrete\EF\PhoneRepository.cs" />
     <Compile Include="Concrete\EF\ProductRepository.cs" />
     <Compile Include="Concrete\EF\UserRepository.cs" />
     <Compile Include="Dal\Context\IntekoDbContext.cs" />
-    <Compile Include="Migrations\202109222037086_Initial.cs" />
-    <Compile Include="Migrations\202109222037086_Initial.designer.cs">
-      <DependentUpon>202109222037086_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\202110070643288_Initial.cs" />
+    <Compile Include="Migrations\202110070643288_Initial.designer.cs">
+      <DependentUpon>202110070643288_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202109222122126_UserName_And_Status.cs" />
-    <Compile Include="Migrations\202109222122126_UserName_And_Status.designer.cs">
-      <DependentUpon>202109222122126_UserName_And_Status.cs</DependentUpon>
+    <Compile Include="Migrations\202110110613385_No.cs" />
+    <Compile Include="Migrations\202110110613385_No.designer.cs">
+      <DependentUpon>202110110613385_No.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202109232149276_Product_And_Phone.cs" />
-    <Compile Include="Migrations\202109232149276_Product_And_Phone.designer.cs">
-      <DependentUpon>202109232149276_Product_And_Phone.cs</DependentUpon>
+    <Compile Include="Migrations\202110120651522_new.cs" />
+    <Compile Include="Migrations\202110120651522_new.designer.cs">
+      <DependentUpon>202110120651522_new.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202109232154055_İnfo.cs" />
-    <Compile Include="Migrations\202109232154055_İnfo.designer.cs">
-      <DependentUpon>202109232154055_İnfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202109232209013_Payment.cs" />
-    <Compile Include="Migrations\202109232209013_Payment.designer.cs">
-      <DependentUpon>202109232209013_Payment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202109241348071_mistake.cs" />
-    <Compile Include="Migrations\202109241348071_mistake.designer.cs">
-      <DependentUpon>202109241348071_mistake.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202109261627286_Log.cs" />
-    <Compile Include="Migrations\202109261627286_Log.designer.cs">
-      <DependentUpon>202109261627286_Log.cs</DependentUpon>
+    <Compile Include="Migrations\202110120956497_Surname.cs" />
+    <Compile Include="Migrations\202110120956497_Surname.designer.cs">
+      <DependentUpon>202110120956497_Surname.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,26 +101,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202109222037086_Initial.resx">
-      <DependentUpon>202109222037086_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202110070643288_Initial.resx">
+      <DependentUpon>202110070643288_Initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109222122126_UserName_And_Status.resx">
-      <DependentUpon>202109222122126_UserName_And_Status.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202110110613385_No.resx">
+      <DependentUpon>202110110613385_No.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109232149276_Product_And_Phone.resx">
-      <DependentUpon>202109232149276_Product_And_Phone.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202110120651522_new.resx">
+      <DependentUpon>202110120651522_new.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109232154055_İnfo.resx">
-      <DependentUpon>202109232154055_İnfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109232209013_Payment.resx">
-      <DependentUpon>202109232209013_Payment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109241348071_mistake.resx">
-      <DependentUpon>202109241348071_mistake.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202109261627286_Log.resx">
-      <DependentUpon>202109261627286_Log.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202110120956497_Surname.resx">
+      <DependentUpon>202110120956497_Surname.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

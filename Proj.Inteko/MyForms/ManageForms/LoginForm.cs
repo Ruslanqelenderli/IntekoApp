@@ -30,8 +30,10 @@ namespace Proj.Inteko.MyForms
 
         private void btn_Register_Click(object sender, EventArgs e)
         {
+            this.Hide();
             RegisterForm form = new RegisterForm();
             form.ShowDialog();
+            
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
@@ -45,7 +47,7 @@ namespace Proj.Inteko.MyForms
                 bool check = false;
                 foreach (var user in users)
                 {
-                    if(user.UserName==username && user.Password == password)
+                    if(user.UserName.ToLower()==username.ToLower() && user.Password == password)
                     {
                         check = true;
                         if (user.Status == Status.Director.ToString())
@@ -106,6 +108,16 @@ namespace Proj.Inteko.MyForms
             {
                 MessageBox.Show("Log Xətası.");
             }
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            this.AcceptButton = btn_Login;
+        }
+
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

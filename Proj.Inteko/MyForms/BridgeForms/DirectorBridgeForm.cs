@@ -6,6 +6,8 @@ using Proj.DataAccess.Concrete.EF;
 using Proj.Entity.Concrete;
 using Proj.Inteko.MyForms.LogForms;
 using Proj.Inteko.MyForms.ProductForms;
+using Proj.Inteko.MyForms.RegulationForms;
+using Proj.Inteko.MyForms.ReportForms;
 using Proj.Inteko.MyForms.UserForms;
 using System;
 using System.Collections.Generic;
@@ -33,7 +35,9 @@ namespace Proj.Inteko.MyForms.BridgeForms
         {
             var user = Static.User;
             LogoutLog(user);
-            Application.Exit();
+            this.Hide();
+            LoginForm login = new LoginForm();
+            login.ShowDialog();
         }
 
         private void btn_Control_Click(object sender, EventArgs e)
@@ -50,6 +54,7 @@ namespace Proj.Inteko.MyForms.BridgeForms
 
         private void btn_EmployeeInfo_Click(object sender, EventArgs e)
         {
+            this.Hide();
             UserInfoForm userInfoForm = new UserInfoForm();
             userInfoForm.ShowDialog();
         }
@@ -72,8 +77,23 @@ namespace Proj.Inteko.MyForms.BridgeForms
 
         private void btn_Log_Click(object sender, EventArgs e)
         {
+            this.Hide();
             LogForm logForm = new LogForm();
             logForm.ShowDialog();
+        }
+
+        private void btn_Report_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ReportForm reportForm = new ReportForm();
+            reportForm.ShowDialog();
+        }
+
+        private void btn_Regulations_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegulationBridgeForm regulationBridgeForm = new RegulationBridgeForm();
+            regulationBridgeForm.ShowDialog();
         }
     }
 }

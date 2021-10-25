@@ -29,6 +29,7 @@ namespace Proj.Inteko.MyForms.UserForms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserInfoForm));
             this.dgv_UserList = new System.Windows.Forms.DataGridView();
             this.btn_Remove = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
@@ -37,8 +38,9 @@ namespace Proj.Inteko.MyForms.UserForms
             // 
             // dgv_UserList
             // 
+            this.dgv_UserList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_UserList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_UserList.Location = new System.Drawing.Point(3, 2);
+            this.dgv_UserList.Location = new System.Drawing.Point(12, 2);
             this.dgv_UserList.Name = "dgv_UserList";
             this.dgv_UserList.Size = new System.Drawing.Size(506, 399);
             this.dgv_UserList.TabIndex = 0;
@@ -46,7 +48,7 @@ namespace Proj.Inteko.MyForms.UserForms
             // 
             // btn_Remove
             // 
-            this.btn_Remove.Location = new System.Drawing.Point(3, 407);
+            this.btn_Remove.Location = new System.Drawing.Point(12, 407);
             this.btn_Remove.Name = "btn_Remove";
             this.btn_Remove.Size = new System.Drawing.Size(114, 30);
             this.btn_Remove.TabIndex = 1;
@@ -56,7 +58,7 @@ namespace Proj.Inteko.MyForms.UserForms
             // 
             // btn_Exit
             // 
-            this.btn_Exit.Location = new System.Drawing.Point(395, 407);
+            this.btn_Exit.Location = new System.Drawing.Point(403, 407);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(114, 30);
             this.btn_Exit.TabIndex = 2;
@@ -68,14 +70,16 @@ namespace Proj.Inteko.MyForms.UserForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 441);
+            this.BackColor = System.Drawing.Color.OliveDrab;
+            this.ClientSize = new System.Drawing.Size(529, 445);
             this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_Remove);
             this.Controls.Add(this.dgv_UserList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UserInfoForm";
+            this.Text = "İstifadəçilər";
             this.Load += new System.EventHandler(this.UserInfoForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_UserList)).EndInit();
             this.ResumeLayout(false);

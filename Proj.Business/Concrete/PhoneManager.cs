@@ -57,7 +57,7 @@ namespace Proj.Business.Concrete
 
         public bool Remove(Guid id)
         {
-            throw new NotImplementedException();
+            return phoneRepository.Remove(id);
         }
 
         public bool Update(PhoneModel model)

@@ -135,6 +135,12 @@
     <Compile Include="MyForms\ManageForms\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyForms\ProductForms\AddNewProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForms\ProductForms\AddNewProductForm.Designer.cs">
+      <DependentUpon>AddNewProductForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyForms\ProductForms\AddPhoneNumberForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,17 +159,71 @@
     <Compile Include="MyForms\ProductForms\ControlForm.Designer.cs">
       <DependentUpon>ControlForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyForms\ProductForms\PaidForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForms\ProductForms\PaidForm.Designer.cs">
+      <DependentUpon>PaidForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyForms\ProductForms\PhoneNumberForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MyForms\ProductForms\PhoneNumberForm.Designer.cs">
       <DependentUpon>PhoneNumberForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyForms\ProductForms\ProductDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForms\ProductForms\ProductDetailsForm.Designer.cs">
+      <DependentUpon>ProductDetailsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyForms\ProductForms\UpdateProductForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MyForms\ProductForms\UpdateProductForm.Designer.cs">
       <DependentUpon>UpdateProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForms\RegulationForms\CashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForms\RegulationForms\CashForm.Designer.cs">
+      <DependentUpon>CashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForms\RegulationForms\PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForms\RegulationForms\PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForms\RegulationForms\RegulationBridgeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForms\RegulationForms\RegulationBridgeForm.Designer.cs">
+      <DependentUpon>RegulationBridgeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForms\ReportForms\ExpenseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForms\ReportForms\ExpenseForm.Designer.cs">
+      <DependentUpon>ExpenseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForms\ReportForms\ExpenseTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForms\ReportForms\ExpenseTypeForm.Designer.cs">
+      <DependentUpon>ExpenseTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForms\ReportForms\ExpenseUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForms\ReportForms\ExpenseUpdateForm.Designer.cs">
+      <DependentUpon>ExpenseUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyForms\ReportForms\ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyForms\ReportForms\ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MyForms\UserForms\UserInfoForm.cs">
       <SubType>Form</SubType>
@@ -188,6 +248,9 @@
     <EmbeddedResource Include="MyForms\ManageForms\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyForms\ProductForms\AddNewProductForm.resx">
+      <DependentUpon>AddNewProductForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyForms\ProductForms\AddPhoneNumberForm.resx">
       <DependentUpon>AddPhoneNumberForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,11 +260,38 @@
     <EmbeddedResource Include="MyForms\ProductForms\ControlForm.resx">
       <DependentUpon>ControlForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyForms\ProductForms\PaidForm.resx">
+      <DependentUpon>PaidForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyForms\ProductForms\PhoneNumberForm.resx">
       <DependentUpon>PhoneNumberForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyForms\ProductForms\ProductDetailsForm.resx">
+      <DependentUpon>ProductDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyForms\ProductForms\UpdateProductForm.resx">
       <DependentUpon>UpdateProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForms\RegulationForms\CashForm.resx">
+      <DependentUpon>CashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForms\RegulationForms\PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForms\RegulationForms\RegulationBridgeForm.resx">
+      <DependentUpon>RegulationBridgeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForms\ReportForms\ExpenseForm.resx">
+      <DependentUpon>ExpenseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForms\ReportForms\ExpenseTypeForm.resx">
+      <DependentUpon>ExpenseTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForms\ReportForms\ExpenseUpdateForm.resx">
+      <DependentUpon>ExpenseUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForms\ReportForms\ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyForms\UserForms\UserInfoForm.resx">
       <DependentUpon>UserInfoForm.cs</DependentUpon>
@@ -243,6 +333,7 @@
       <Name>Proj.Entity</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

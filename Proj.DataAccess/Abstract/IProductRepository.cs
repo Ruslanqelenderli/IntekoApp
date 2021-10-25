@@ -11,7 +11,8 @@ namespace Proj.DataAccess.Abstract
     {
         void CheckStatus();
         void CheckPaid();
-        bool SentMethod(Guid id);
+        bool SentMethod(Guid id,string monthName);
         bool PaidMethod(Guid id);
+        void Numbering();
     }
 }

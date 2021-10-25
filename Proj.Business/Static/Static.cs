@@ -10,7 +10,12 @@ namespace Proj.Business.Static
     public static class Static
     {
         public static User User { get; set; }
+        public static Expense Expense { get; set; }
         public static Guid Id { get; set; }
-        public static Guid ProductİdForUpdate { get; set; }
+        public static Guid ProductIdForUpdate { get; set; }
+        public static Guid ProductIdForDetails { get; set; }
+        public static Guid ProductIdForPaid { get; set; }
+        public static Guid CashId { get; set; }
+        public static Guid PaymentId { get; set; }
     }
 }

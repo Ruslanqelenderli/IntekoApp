@@ -14,10 +14,11 @@ namespace Proj.Business.Abstract
         Product GetByID(Guid id);
         void CheckStatus();
         void CheckPaid();
-        bool SentMethod(Guid id);
+        bool SentMethod(Guid id,string monthName);
         bool PaidMethod(Guid id);
 
         bool Update(ProductModel model);
         bool Update(Product model);
+        void Numbering();
     }
 }
