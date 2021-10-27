@@ -71,21 +71,9 @@
     <Compile Include="Concrete\EF\ProductRepository.cs" />
     <Compile Include="Concrete\EF\UserRepository.cs" />
     <Compile Include="Dal\Context\IntekoDbContext.cs" />
-    <Compile Include="Migrations\202110070643288_Initial.cs" />
-    <Compile Include="Migrations\202110070643288_Initial.designer.cs">
-      <DependentUpon>202110070643288_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202110110613385_No.cs" />
-    <Compile Include="Migrations\202110110613385_No.designer.cs">
-      <DependentUpon>202110110613385_No.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202110120651522_new.cs" />
-    <Compile Include="Migrations\202110120651522_new.designer.cs">
-      <DependentUpon>202110120651522_new.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202110120956497_Surname.cs" />
-    <Compile Include="Migrations\202110120956497_Surname.designer.cs">
-      <DependentUpon>202110120956497_Surname.cs</DependentUpon>
+    <Compile Include="Migrations\202110271733188_Initial.cs" />
+    <Compile Include="Migrations\202110271733188_Initial.designer.cs">
+      <DependentUpon>202110271733188_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,17 +89,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202110070643288_Initial.resx">
-      <DependentUpon>202110070643288_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202110110613385_No.resx">
-      <DependentUpon>202110110613385_No.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202110120651522_new.resx">
-      <DependentUpon>202110120651522_new.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202110120956497_Surname.resx">
-      <DependentUpon>202110120956497_Surname.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202110271733188_Initial.resx">
+      <DependentUpon>202110271733188_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -33,7 +33,7 @@ namespace Proj.Inteko.MyForms.ProductForms
                 "Nəğd","Köçürmə"
             };
             cmb_TypeOfPayment.DataSource = typeOfPayment;
-            FillTextBox();
+            //FillTextBox();
         }
 
         private void btn_Update_Click(object sender, EventArgs e)
@@ -48,8 +48,8 @@ namespace Proj.Inteko.MyForms.ProductForms
                     {
                         initialPaymentStatus = true;
                     }
-                    var cash = cashService.GetByName();
-                    var payment = paymentService.GetByName();
+                    //var cash = cashService.GetByName();
+                   // var payment = paymentService.GetByName();
                     ProductModel productModel = new ProductModel()
                     {
                         Name = txb_Name.Text,
@@ -59,10 +59,10 @@ namespace Proj.Inteko.MyForms.ProductForms
                         Address = txb_Address.Text,
                         İnfo = rtxb_Info.Text,
                         ApproximateLocation = txb_ApproximateLocation.Text,
-                        CashId = cash.Id,
+                        //CashId = cash.Id,
                         EmployeeWhoConnects = txb_EmployeeWhoConnects.Text,
                         EmployeeWhoSells = txb_EmployeeWhoSells.Text,
-                        PaymentId = payment.Id,
+                        //PaymentId = payment.Id,
                         Price = Convert.ToDecimal(txb_Price.Text),
                         ServicePrice = Convert.ToDecimal(txb_ServicePrice.Text),
                         SellesPayment = Convert.ToDecimal(txb_SellesPayment.Text),
@@ -143,11 +143,9 @@ namespace Proj.Inteko.MyForms.ProductForms
             txb_Address.Text = model.Address;
             rtxb_Info.Text = model.İnfo;
             txb_ApproximateLocation.Text = model.ApproximateLocation;
-            txb_CashireModel.Text = model.CashireModel;
             txb_ContractNo.Text = model.ContractNO.ToString();
             txb_EmployeeWhoConnects.Text = model.EmployeeWhoConnects;
             txb_EmployeeWhoSells.Text = model.EmployeeWhoSells;
-            cmb_TypeOfPayment.SelectedItem = model.TypeOfPayment;
             txb_Price.Text = model.Price.ToString();
             txb_ServicePrice.Text = model.ServicePrice.ToString();
             txb_SellesPayment.Text = model.SellesPayment.ToString();
